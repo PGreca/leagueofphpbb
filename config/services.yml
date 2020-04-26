@@ -1,0 +1,9 @@
+services:
+    pgreca.leagueofphpbb.event.listener:
+        class: pgreca\leagueofphpbb\event\listener
+        arguments:
+            - '@template'
+            - '@user'
+            - '@request'
+        tags:
+            - { name: event.listener }

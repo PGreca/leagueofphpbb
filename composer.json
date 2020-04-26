@@ -1,0 +1,26 @@
+ {
+    "name": "pgreca/leagueofphpbb",
+    "type": "phpbb-extension",
+    "description": "Badge rank of League of Legends",
+    "homepage": "http://pgreca.it",
+    "version": "0.0.1",
+    "time": "2020-04-17",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "pgreca",
+            "email": "anpgreca@gmail.com",
+            "homepage": "http://pgreca.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2"
+    },
+    "extra": {
+        "display-name": "League of PhpBB",
+        "soft-require": {
+             "phpbb/phpbb": "3.3.*@dev"
+        }
+    }
+}

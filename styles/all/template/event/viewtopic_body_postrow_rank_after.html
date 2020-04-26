@@ -1,0 +1,4 @@
+{% if postrow.PROFILE_SUMMONERNAME %}<dl class="left-box">
+	<dt>&nbsp;</dt> <dd style="text-align: center;">{% if postrow.PROFILE_SUMMONERTIER && postrow.PROFILE_SUMMONERRANK %}<img src="https://kr-cdn.poro.gg/images/lol/tier/{{ postrow.PROFILE_SUMMONERTIER }}_{{ postrow.PROFILE_SUMMONERRANK }}.png">{% else %}<img src="https://kr-cdn.poro.gg/images/lol/tier/provisional.png">{% endif %}</dd>
+	<dt>League of Legends{L_COLON}</dt> <dd><b>{{ postrow.PROFILE_SUMMONERNAME }}</b> ({{ postrow.PROFILE_SUMMONERLVL }})</dd>
+</dl>{% endif %}

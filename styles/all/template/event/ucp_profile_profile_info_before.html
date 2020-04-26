@@ -1,0 +1,19 @@
+<dl>
+	<dt>
+		<label for="user_about">Nickname League of Legends{{ lang('COLON') }}</label>
+	</dt>
+	<dd>
+		<select name="user_summonerServer" id="user_summonerServer">
+			<option {% if PROFILE_SUMMONERSERVER == "BR1" %}selected="selected"{% endif %} value="BR">BR</option>
+			<option {% if PROFILE_SUMMONERSERVER == "EUN1" %}selected="selected"{% endif %} value="EUN1">EUNE</option>
+			<option {% if PROFILE_SUMMONERSERVER == "EUW1" %}selected="selected"{% endif %} value="EUW1">EUW</option>
+			<option {% if PROFILE_SUMMONERSERVER == "LA1" %}selected="selected"{% endif %} value="LA1">LAN</option>
+			<option {% if PROFILE_SUMMONERSERVER == "LA2" %}selected="selected"{% endif %} value="LA2">LAS</option>
+			<option {% if PROFILE_SUMMONERSERVER == "NA1" %}selected="selected"{% endif %} value="NA1">NA</option>
+			<option {% if PROFILE_SUMMONERSERVER == "OCE" %}selected="selected"{% endif %} value="OCE">OCE</option>
+			<option {% if PROFILE_SUMMONERSERVER == "RU" %}selected="selected"{% endif %} value="RU">RU</option>
+			<option {% if PROFILE_SUMMONERSERVER == "TR1" %}selected="selected"{% endif %} value="TR1">TR</option>
+		</select>
+		<input type="text" class="inputbox autowidth" name="user_summonerName" id="user_summonerName" size="20" value="{{ PROFILE_SUMMONERNAME }}" />
+	</dd>
+</dl>
