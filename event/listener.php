@@ -159,9 +159,9 @@ class listener implements EventSubscriberInterface
 		$event['post_row'] = array_merge($event['post_row'], array(
 			'PROFILE_SUMMONERSERVER'		=> $event['user_poster_data']['user_summonerServer'],
 			'PROFILE_SUMMONERNAME'			=> $event['user_poster_data']['user_summonerName'],	
-			'PROFILE_SUMMONERLVL'			=> $summoner['lvl'],	
-			'PROFILE_SUMMONERTIER'			=> $summoner['tier'],
-			'PROFILE_SUMMONERRANK'			=> $summoner['rank']
+			'PROFILE_SUMMONERLVL'			=> $summoner->lvl,	
+			'PROFILE_SUMMONERTIER'			=> $summoner->tier,
+			'PROFILE_SUMMONERRANK'			=> $summoner->rank
 		));
 	}
 	
